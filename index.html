@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet" />
+      <link
+      href="https://fonts.googleapis.com/css?family=Grandstander"
+      rel="stylesheet" />
+      
+  </head>
+  <body>
+    <header class="site-header clearfix">
+      <nav>
+        <div class="logo">
+          <h1>Code4Kids</h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UCbVvJueGHrTg1PT2TWb9-EQ/featured?view_as=subscriber" target="_blank">Classes</a></li>
+            <li><a href="https://quizizz.com/admin/quiz/580fc6f37a3457c969c1edf1/coding-for-kids" target="_blank">Quizzes</a></li>
+            <li><a rel="About_Us" href="./About_Us.html" target="_blank">About Us</a></li>
+            <li><a href="https://www.about.me/code4kids" target="_blank">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section>
+        <div class="leftside">
+          <img src="images/intro1.png" />
+        </div>
+        <div class="rightside">
+          <h1 class="heading_org">Code4Kids</h1>
+          <p class='meta'>
+            Under the <em><strong>NEW EDUCATION POLICY</strong></em> our government has
+            made it mandatory for all students among classes 6th to 12th to
+            learn coding. <br />
+            We are here to help you by providing free educational resourses and
+            make coding <s>fun</s> obsessing for you.
+          </p>
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto"
+          >
+            Get Started
+          </button>
+        </div>
+      </section>
+    </header>
+    <div id="id01" class="modal">
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <img src="images/avatar.png" alt="Avatar" class="avatar" />
+        </div>
+        
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit"><a class="lecture" href="./main.html">Login</a></button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw"><a href="https://www.youtube.com/watch?v=d1YBv2mWll0&ab_channel=Sordiway">Forgot password?</a></span>
+        </div>
+      </form>
+    </div>
+   <script>
+      var modal = document.getElementById("id01");
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    
+
+    </script>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <p>© Copyright 2023 Code 4 Kids</p>
+      </div>
+    </div>
+    
+  </body>
+</html>
